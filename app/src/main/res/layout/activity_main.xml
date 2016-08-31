@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:nen="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/biz_ad_slogan"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_ad_ui"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_above="@id/rl_bottom" />
+
+    <com.m520it.neteasynews.view.RingImageView
+        android:id="@+id/pg_ring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        nen:fontSize="20dp"
+        nen:circleColor="#55de27"
+        nen:ringColor="#070aef"
+        nen:fontColor="#a426ba"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_red_dark"
+        android:id="@+id/title"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:listSelector="@android:color/transparent"
+            android:src="@drawable/base_common_default_icon_small"
+            />
+
+        <TextView
+            android:id="@+id/title_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="+5/40"
+
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/title_coin"
+            android:src="@drawable/ic_main_menu_gold"
+            android:id="@+id/gold_icon"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/gold_icon"
+            android:src="@drawable/ic_main_menu_search"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/outer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title">
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/biz_news_column_add_subscribe"
+            android:layout_alignParentRight="true"/>
+
+        <RelativeLayout
+            android:layout_toLeftOf="@id/iv_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabs"
+        />
+            <RelativeLayout
+                android:id="@+id/rl_menu"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_dark"
+                android:visibility="gone">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:clickable="true"
+                    android:textSize="16dp"
+                    android:text="切换项目"/>
+
+                <TextView
+                    android:id="@+id/tv_complete"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/selector_font"
+                    android:background="@drawable/selector_rule"
+                    android:clickable="true"
+                    android:text="排序删除"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/outer">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewPager"
+                />
+        <LinearLayout
+            android:id="@+id/ll_hobby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <com.m520it.neteasynews.view.MyGridView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/show"
+                        android:numColumns="4"
+                        android:horizontalSpacing="10dp"
+                        android:verticalSpacing="7dp"
+                        android:layout_marginTop="10dp"
+
+                        android:listSelector="@android:color/transparent"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/darker_gray"
+                        android:text="点击添加更多内容"
+                        android:layout_marginTop="10dp"
+
+                        />
+
+                    <com.m520it.neteasynews.view.MyGridView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/choose"
+                        android:numColumns="4"
+                        android:horizontalSpacing="10dp"
+                        android:verticalSpacing="7dp"
+                        android:layout_marginTop="10dp"
+                        android:listSelector="@android:color/transparent"
+                        />
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+     </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

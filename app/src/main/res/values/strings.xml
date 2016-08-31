@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NetEasyNews</string>
+    <string-array name="title">
+        <item>新闻</item>
+        <item>阅读</item>
+        <item>视频</item>
+        <item>话题</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="lead">
+        <item>头条</item>
+        <item>娱乐</item>
+        <item>热点</item>
+        <item>体育</item>
+        <item>网易号</item>
+        <item>财经</item>
+        <item>科技</item>
+        <item>汽车</item>
+    </string-array>
+
+    <string name="feed">热门评论</string>
+    <string name="fa">网易网友</string>
+
+
+    <string name="hello">Hello World, JPush!</string>
+    <string name="app_name1">JPush SDK Demo</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+</resources>

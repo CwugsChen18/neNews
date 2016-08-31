@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RingImageView">
+        <attr name="fontSize" format="dimension"/>
+        <attr name="fontColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="circleColor" format="color"/>
+    </declare-styleable>
+
+
+</resources>
